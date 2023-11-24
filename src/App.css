@@ -1,0 +1,39 @@
+.body{
+   display: flex;
+   flex-direction: row; 
+   flex-wrap: wrap;
+}
+
+.body__head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin:  2rem;
+}
+
+.body__h1{
+font-weight: 500;
+}
+
+
+
+.body__userCard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:baseline;
+
+}
+
+.body__btnnew{
+    min-width: 200px;
+    max-width: 200px;
+    padding: 0.5em;
+    font-size: 1.1rem;
+    border: none;
+    background-color:  rgb(49, 49, 85);
+    color: white;
+    border-radius: 0.6em;
+
+}
