@@ -7,7 +7,7 @@ const useCrud = (baseUrl) => {
 
     //get
     const getApi = (path) => {
-        const url = `${baseUrl}${path}/`
+        const url = `${baseUrl}${path}`
         axios.get(url)
             .then(res => setInfoApi(res.data))
             .catch(err => console.log(err))
@@ -16,7 +16,7 @@ const useCrud = (baseUrl) => {
     //post
 
     const postApi = (path, data) => {
-        const url = `${baseUrl}${path}/`
+        const url = `${baseUrl}${path}`
         axios.post(url, data)
             .then(res => {
                 setInfoApi ([...infoApi, res.data]) 
@@ -26,7 +26,7 @@ const useCrud = (baseUrl) => {
 
     //delete
     const deleteApi = (path, id) => {
-        const url = `${baseUrl}${path}/${id}/`
+        const url = `${baseUrl}${path}/${id}`
         axios.delete(url)
             .then(res => {
                 setInfoApi(infoApi.filter(e => e.id !== id))
@@ -37,7 +37,7 @@ const useCrud = (baseUrl) => {
     //update
 
     const updateApi = (path, id, data) => {
-        const url = `${baseUrl}${path}/${id}/`
+        const url = `${baseUrl}${path}/${id}`
         axios.patch(url, data)
             .then(res =>{
                 setInfoApi(infoApi.map(e => e.id === id ? res.data : e))

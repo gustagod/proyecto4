@@ -9,7 +9,8 @@ function App() {
 
   const [infoUpdate, setInfoUpdate] = useState()
 
-  const url = 'https://users-crud.academlo.tech'
+  //const url = 'https://users-crud.academlo.tech'
+  const url="https://project2-dev-kmpa.1.us-1.fl0.io"
   const [users, getUsers, createUser, deleteUser, updateUser] = useCrud(url)
   const [isDisable, setIsDisable] = useState(true)
 
