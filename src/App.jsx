@@ -19,7 +19,7 @@ function App() {
   }
   useEffect(() => {
     getUsers('/users')
-  }, [])
+  }, [users])
   console.log(users);
 
   return (
